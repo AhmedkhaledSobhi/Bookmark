@@ -1,0 +1,18 @@
+h2{
+    color: wheat !important;
+}
+
+label{
+    color: wheat;
+}
+
+@media (max-width:575.97px) {
+ form{
+    .w-75{
+       
+        width: 100% !important;
+        background-color: aqua !important;
+    }
+ }
+ 
+}

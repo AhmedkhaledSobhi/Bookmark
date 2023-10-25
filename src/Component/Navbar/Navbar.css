@@ -1,0 +1,21 @@
+nav {
+  padding: 35px;
+}
+nav .navbar {
+  transition: all 0.5s;
+}
+nav h1 {
+  color: wheat !important;
+}
+nav i {
+  color: wheat;
+}
+
+@media (max-width: 575.98px) {
+  nav h1, nav h2 {
+    font-size: 17px;
+  }
+  nav h1 i, nav h2 i {
+    font-size: 5px !important;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

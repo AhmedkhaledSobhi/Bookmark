@@ -1,0 +1,25 @@
+nav{
+.navbar{
+    transition: all 0.5s;
+    // background-color: steelblue !important;
+}
+    padding: 35px;
+    h1{
+        color: wheat !important;
+    }
+    i{
+        color: wheat;
+    }
+}
+
+@media (max-width:575.98px) {
+    
+    nav{
+        h1, h2{
+            font-size:17px;
+            i{
+                font-size: 5px !important;
+            }
+        }
+    }
+}
