@@ -70,7 +70,8 @@ export default function ElemntBookmark()
 // ========================================================
 
    useEffect(()=>{
-    
+        getDocumentsByQuery();
+
     return()=>{
         getDocumentsByQuery();
     }
