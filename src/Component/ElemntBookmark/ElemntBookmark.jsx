@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 
 import './ElemntBookmark.css';
 
-import { getFirestore, doc, query, collection, getDocs, updateDoc, deleteDoc, getDoc, where} from 'firebase/firestore';
+import { getFirestore, doc, query, collection, getDocs, updateDoc, deleteDoc} from 'firebase/firestore';
 import {app} from '../../firebase'; 
 
 
@@ -28,6 +28,7 @@ export default function ElemntBookmark()
         setItems(dataWithIds);
     };
 
+    console.log(items);
 
 // ================= { update Element } ===============================
 
@@ -129,8 +130,6 @@ export default function ElemntBookmark()
                     </div>
                 </div>
             </div>
-
-
         </>
     )
 }
