@@ -77,13 +77,13 @@ export default function ElemntBookmark()
 
    useEffect(()=>{
 
-        console.log("ahmed effect 1 ");
+        // console.log("ahmed effect 1 ");
         getDocumentsByQuery();
 
     return()=>{
-        getDocumentsByQuery();
+        // getDocumentsByQuery();
 
-        console.log(" ahmed effect 2 ");
+        // console.log(" ahmed effect 2 ");
     }
    },[deleteDocument])
 
