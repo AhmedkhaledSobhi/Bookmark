@@ -24,7 +24,7 @@ export default function ElemntBookmark()
         id: doc.id,
         data: doc.data(),
         }));
-    
+        console.log(dataWithIds);
         setItems(dataWithIds);
     };
 
@@ -100,7 +100,9 @@ export default function ElemntBookmark()
                             <td>
                                 <button onClick={()=>{displayDataUpdate(item)}} type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Update</button>
                             </td>
-                            <td><button onClick={() => deleteDocument(item.id)} className='btn btn-outline-danger'><i className="fa-solid fa-trash"></i> Delete</button></td>
+                            <td>
+                                <button onClick={() => deleteDocument(item.id)} className='btn btn-outline-danger'><i className="fa-solid fa-trash"></i> Delete</button>
+                            </td>
                         </tr> )}                 
                     </tbody>
                 </table>
