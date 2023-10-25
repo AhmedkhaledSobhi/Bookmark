@@ -16,6 +16,7 @@ export default function ElemntBookmark()
     const [isModalVisible, setModalVisible] = useState(false);
 
     const getDocumentsByQuery = async () => {
+        console.log("Ahmed (getDocumentsByQuery) ");
         const collectionRef = collection(firestore,'Bookmark');
         const q = query(collectionRef);
         const snapShot = await getDocs(q);
@@ -26,9 +27,14 @@ export default function ElemntBookmark()
         }));
         console.log(dataWithIds);
         setItems(dataWithIds);
+
+        console.log("Ahmed end getDocumentsByQuery");
+
     };
 
     console.log(items);
+
+    console.log("ahmed oute getDocumentsByQuery");
 
 // ================= { update Element } ===============================
 
@@ -70,10 +76,14 @@ export default function ElemntBookmark()
 // ========================================================
 
    useEffect(()=>{
+
+        console.log("ahmed effect 1 ");
         getDocumentsByQuery();
 
     return()=>{
         getDocumentsByQuery();
+
+        console.log(" ahmed effect 2 ");
     }
    },[deleteDocument])
 
