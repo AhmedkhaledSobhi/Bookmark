@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "bookmark-2023.appspot.com",
   messagingSenderId: "812758146434",
   appId: "1:812758146434:web:7135f3ba2dc1fa28f1439b",
-  databaseURL: 'https://bookmark-2023-default-rtdb.firebaseio.com/'
+  // databaseURL: 'https://bookmark-2023-default-rtdb.firebaseio.com/'
 };
 
 export const app = initializeApp(firebaseConfig);
